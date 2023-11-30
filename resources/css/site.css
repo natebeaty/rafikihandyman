@@ -1,0 +1,30 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+/* This is all you. */
+
+@font-face {
+    font-family: 'Ranille';
+    src: url('/resources/fonts/RanilleNormal-Regular.woff2') format('woff2'),
+        url('/resources/fonts/RanilleNormal-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+body {
+    background: #B99E86 url('/resources/images/border.png') 0 0 repeat-y;
+    background-size: 20px 190px;
+    @media (min-width: 640px) {
+        background-size: 39px 380px;
+    }
+}
+
+h1,.h1 {
+    font-family: 'Ranille', Georgia, serif;
+}
+
+.btn {
+    @apply font-bold py-2 px-10 rounded;
+}

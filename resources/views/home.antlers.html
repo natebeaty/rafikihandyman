@@ -1,0 +1,53 @@
+<header class="flex flex-row flex-nowrap border-b-2 sm:border-b-4 border-black w-full">
+    <div class="grow self-end pb-5">
+        <h1 class="text-3xl sm:text-5xl tracking-tight">Rafiki Handyman, LLC</h1>
+        <ul class="text-md sm:text-lg font-bold">
+            <li class="sm:inline-block"><a href="tel:+19192254533">919.225.4533</a></li>
+            <li class="sm:inline-block sm:ml-4"><a href="mailto:rafikihandyman@gmail.com">rafikihandyman@gmail.com</a></li>
+        </ul>
+    </div>
+    <div class="header-image shrink-0">
+        <img class="w-24" src="{{ vite:asset src="resources/images/babuu.png" }}" alt="Babuu">
+    </div>
+</header>
+
+<article class="mt-5 max-w-xl mb-5">
+    {{ content | widont }}
+</article>
+
+<div class="container grid grid-cols-2 sm:grid-cols-3 gap-2 mx-auto">
+    {{ work }}
+        <div><img src="{{ url }}" class="p-1 aspect-[4/3] sm:aspect-[3/4] object-cover" alt="{{ alt }}"></div>
+    {{ /work }}
+</div>
+
+<div class="container mt-4">
+    {{ form:contact }}
+        <h2 class="text-2xl font-bold pb-2">Send Babuu a message:</h2>
+         {{ if success }}
+            <div class="bg-green-300 text-white p-2">
+                {{ success }}
+            </div>
+        {{ else }}
+            {{ if errors }}
+                <div class="bg-red-600 text-white p-2">
+                    {{ errors }}
+                        {{ value }}<br>
+                    {{ /errors }}
+                </div>
+            {{ /if }}
+            {{ fields }}
+                <div class="pb-2">
+                    <label class="text-lg font-bold">{{ display }}:</label>
+                    <div class="">{{ field }}</div>
+                    {{ if error }}
+                        <p class="text-gray-600">{{ error }}</p>
+                    {{ /if }}
+                </div>
+            {{ /fields }}
+            <input type="text" class="hidden" name="{{ honeypot ?? 'honeypot' }}">
+            <button class="btn bg-black hover:bg-gray-600 text-white" type="submit">Submit</button>
+        {{ /if }}
+    
+    {{ /form:contact }}
+</div>

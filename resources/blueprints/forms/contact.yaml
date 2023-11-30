@@ -1,0 +1,24 @@
+fields:
+  -
+    handle: name
+    field:
+      display: Name
+      type: text
+      validate: required
+  -
+    handle: phone
+    field:
+      display: Phone
+      type: text
+  -
+    handle: email
+    field:
+      display: Email
+      type: text
+      validate: required|email
+  -
+    handle: comment
+    field:
+      display: Comment
+      type: textarea
+      validate: required
