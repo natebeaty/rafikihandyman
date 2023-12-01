@@ -29,8 +29,8 @@ def composer_update(c):
     c.run("cd {} && {} ~/bin/composer.phar install  --no-interaction --prefer-dist --optimize-autoloader --no-dev".format(remote_path, php_command))
 
 def build(c):
-    c.run("cd {} && ~/.nvm/versions/node/v17.9.1/bin/npm ci")
-    c.run("cd {} && ~/.nvm/versions/node/v17.9.1/bin/npm run build")
+    c.run("cd {} && ~/.nvm/versions/node/v17.9.1/bin/npm ci".format(remote_path))
+    c.run("cd {} && ~/.nvm/versions/node/v17.9.1/bin/npm run build".format(remote_path))
     c.run("cd {} && {} artisan cache:clear".format(remote_path, php_command))
     c.run("cd {} && {} artisan config:cache".format(remote_path, php_command))
     c.run("cd {} && {} artisan route:cache".format(remote_path, php_command))
