@@ -32,3 +32,10 @@ h1,.h1 {
 .btn {
     @apply font-bold py-2 px-10 rounded;
 }
+
+form input[type=text],
+form textarea {
+    width: 100%;
+    padding: 5px;
+    margin: 5px 0;
+}
