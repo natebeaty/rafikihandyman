@@ -1,7 +1,7 @@
 from fabric import task
 from invoke import run as local
 
-remote_path = "/home/natebeaty/apps/rafikihandyman"
+remote_path = "/home/natebeaty/srcapps/rafikihandyman"
 remote_hosts = ["natebeaty@natebeaty.com"]
 git_branch = "main"
 php_command = "php82"
@@ -11,7 +11,7 @@ php_command = "php82"
 # def production(c):
 #     global remote_hosts, remote_path
 #     remote_hosts = ["natebeaty@natebeaty.com"]
-#     remote_path = "/home/natebeaty/apps/rafikihandyman"
+#     remote_path = "/home/natebeaty/srcapps/rafikihandyman"
 #     git_branch = "main"
 
 # deploy
