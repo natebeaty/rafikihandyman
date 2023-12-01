@@ -7,7 +7,7 @@
         </ul>
     </div>
     <div class="header-image shrink-0">
-        <img class="w-24" src="{{ vite:asset src="resources/images/babuu.png" }}" alt="Babuu">
+        <img class="w-24 md:w-32" src="{{ vite:asset src="resources/images/babuu.png" }}" alt="Babuu">
     </div>
 </header>
 
@@ -21,6 +21,7 @@
     {{ /work }}
 </div>
 
+{{ nocache }}
 <div class="container mt-4">
     {{ form:contact }}
         <h2 class="text-2xl font-bold pb-2">Send Babuu a message:</h2>
@@ -51,3 +52,4 @@
     
     {{ /form:contact }}
 </div>
+{{ /nocache }}
