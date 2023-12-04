@@ -1,0 +1,32 @@
+{{ nocache }}
+<div class="container mt-4 max-w-lg">
+    {{ form:contact }}
+        <h2 class="text-2xl font-bold pb-2">Send Babuu a message:</h2>
+         {{ if success }}
+            <div class="bg-green-300 text-white p-2">
+                {{ success }}
+            </div>
+        {{ else }}
+            {{ if errors }}
+                <div class="bg-red-600 text-white p-2">
+                    {{ errors }}
+                        {{ value }}<br>
+                    {{ /errors }}
+                </div>
+            {{ /if }}
+            {{ fields }}
+                <div class="pb-2">
+                    <label class="text-lg font-bold">{{ display }}:</label>
+                    <div class="">{{ field }}</div>
+                    {{ if error }}
+                        <p class="text-gray-600">{{ error }}</p>
+                    {{ /if }}
+                </div>
+            {{ /fields }}
+            <input type="text" class="hidden" name="{{ honeypot ?? 'honeypot' }}">
+            <button class="btn bg-gray-800 hover:bg-gray-600 text-white" type="submit">Submit</button>
+        {{ /if }}
+    
+    {{ /form:contact }}
+</div>
+{{ /nocache }}

@@ -11,45 +11,16 @@
     </div>
 </header>
 
-<article class="mt-5 max-w-xl mb-5">
+<article class="mt-5 max-w-xl mb-5 md:text-lg">
     {{ content | widont }}
 </article>
+
+<div class="container mt-5 mb-5">
+    <a class="btn bg-gray-800 hover:bg-gray-600 text-white" href="mailto:rafikihandyman@gmail.com">Send Babuu an Email</a>
+</div>
 
 <div class="container grid grid-cols-2 sm:grid-cols-3 gap-2 mx-auto">
     {{ work }}
         <div><img src="{{ url }}" class="p-1 aspect-[4/3] sm:aspect-[3/4] object-cover" alt="{{ alt }}"></div>
     {{ /work }}
 </div>
-
-{{ nocache }}
-<div class="container mt-4 max-w-lg">
-    {{ form:contact }}
-        <h2 class="text-2xl font-bold pb-2">Send Babuu a message:</h2>
-         {{ if success }}
-            <div class="bg-green-300 text-white p-2">
-                {{ success }}
-            </div>
-        {{ else }}
-            {{ if errors }}
-                <div class="bg-red-600 text-white p-2">
-                    {{ errors }}
-                        {{ value }}<br>
-                    {{ /errors }}
-                </div>
-            {{ /if }}
-            {{ fields }}
-                <div class="pb-2">
-                    <label class="text-lg font-bold">{{ display }}:</label>
-                    <div class="">{{ field }}</div>
-                    {{ if error }}
-                        <p class="text-gray-600">{{ error }}</p>
-                    {{ /if }}
-                </div>
-            {{ /fields }}
-            <input type="text" class="hidden" name="{{ honeypot ?? 'honeypot' }}">
-            <button class="btn bg-gray-800 hover:bg-gray-600 text-white" type="submit">Submit</button>
-        {{ /if }}
-    
-    {{ /form:contact }}
-</div>
-{{ /nocache }}
