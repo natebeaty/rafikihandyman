@@ -30,7 +30,7 @@ h1,.h1 {
 }
 
 .btn {
-    @apply font-bold py-2 px-10 rounded;
+    @apply font-bold py-2 px-10 rounded inline-block text-center;
 }
 
 p+p {
