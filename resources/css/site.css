@@ -2,8 +2,6 @@
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
 
-/* This is all you. */
-
 @font-face {
     font-family: 'Ranille';
     src: url('/resources/fonts/RanilleNormal-Regular.woff2') format('woff2'),
