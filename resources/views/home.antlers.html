@@ -23,7 +23,7 @@
     {{ work }}
         <div>
             <a href="{{ url }}" class="glightbox">
-                <img src="{{ url }}" class="p-1 aspect-[4/3] sm:aspect-[3/4] object-cover" alt="{{ alt }}">
+                <img src="{{ glide:url preset="thumbnail" }}" class="p-1 aspect-[4/3] sm:aspect-[3/4] object-cover" alt="{{ alt }}">
             </a>
         </div>
     {{ /work }}
