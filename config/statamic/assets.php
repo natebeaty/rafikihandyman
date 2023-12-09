@@ -98,7 +98,8 @@ return [
         */
 
         'presets' => [
-            'thumbnail' => ['w' => 600, 'h' => 600, 'q' => 75],
+            'thumbnail' => ['w' => 600, 'h' => 600, 'q' => 75, 'fit' => 'max'],
+            'max_upload_size' => ['w' => 2400, 'h' => 2400, 'fit' => 'max'],
         ],
 
         /*
