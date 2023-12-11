@@ -8,5 +8,5 @@ const lightbox = GLightbox();
 new Glide('.glide', {
 	type: 'carousel',
 	autoplay: 5000,
-	animationDuration: 1500,
+	animationDuration: 500,
 }).mount();
