@@ -19,19 +19,17 @@ tabs:
               display: Content
               localizable: true
           -
-            handle: author
+            handle: services
             field:
-              type: users
-              display: Author
-              default: current
-              localizable: true
-              max_items: 1
-          -
-            handle: template
-            field:
-              type: template
-              display: Template
-              localizable: true
+              type: list
+              display: Services
+              icon: list
+              width: 50
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              replicator_preview: true
+              hide_display: false
       -
         display: Images
         fields:
@@ -62,6 +60,7 @@ tabs:
             field:
               type: slug
               localizable: true
+              validate: 'max:200'
           -
             handle: parent
             field:
