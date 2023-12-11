@@ -5,7 +5,7 @@ title: 'Rafiki Handyman, LLC'
 template: home
 author: 44bf7f9c-5f80-4c74-96ad-9c543a478138
 updated_by: eb226ecb-d831-4671-886d-437dbd5f8d01
-updated_at: 1702334784
+updated_at: 1702335899
 work:
   - 244303649_405530747651476_5018775636285600742_n.jpg
   - 401001445_928555688609398_3019296620293433724_n.jpg
@@ -27,6 +27,6 @@ services:
   - Additions
   - 'Interior Repairs'
   - Painting
-  - 'Power Wash'
+  - 'Pressure Washing'
 ---
 Babuu handles construction projects and renovations big and small. With clear communication and timely work, he approaches each project holistically, finding the best path to bring joy to your home or business.
