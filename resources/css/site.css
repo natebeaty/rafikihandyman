@@ -12,7 +12,7 @@
 }
 
 body {
-    background: #B99E86 url('/resources/images/border.png') 0 0 repeat-y;
+    background: #E9C7A8 url('/resources/images/border.png') 0 0 repeat-y;
     background-size: 20px 190px;
     @media (min-width: 640px) {
         background-size: 39px 380px;
@@ -40,4 +40,11 @@ form textarea {
     width: 100%;
     padding: 5px;
     margin: 5px 0;
+}
+
+.user-content a {
+    text-decoration: underline;
+}
+.user-content ul {
+    @apply list-disc pl-4 mt-5 mb-5;
 }
