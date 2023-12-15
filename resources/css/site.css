@@ -45,6 +45,8 @@ form textarea {
 .user-content a {
     text-decoration: underline;
 }
+header a:hover,
+footer a:hover,
 .user-content a:hover {
     background: white;
 }
