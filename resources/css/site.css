@@ -45,6 +45,9 @@ form textarea {
 .user-content a {
     text-decoration: underline;
 }
+.user-content a:hover {
+    background: white;
+}
 .user-content ul {
     @apply list-disc pl-4 mt-5 mb-5;
 }
