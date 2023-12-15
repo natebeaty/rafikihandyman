@@ -38,7 +38,15 @@ return [
     */
 
     'widgets' => [
-        'getting_started',
+        [
+            'type' => 'collection',
+            'collection' => 'pages',
+            'width' => 50
+        ],
+        [
+            'type' => 'updater',
+            'width' => 50
+        ]
     ],
 
     /*
