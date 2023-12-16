@@ -5,7 +5,7 @@ title: 'Rafiki Handyman, LLC'
 template: home
 author: 44bf7f9c-5f80-4c74-96ad-9c543a478138
 updated_by: eb226ecb-d831-4671-886d-437dbd5f8d01
-updated_at: 1702669039
+updated_at: 1702746527
 work:
   - 244303649_405530747651476_5018775636285600742_n.jpg
   - 401001445_928555688609398_3019296620293433724_n.jpg
@@ -62,7 +62,7 @@ services:
   - Painting
   - 'Pressure Washing'
 ---
-Rafiki Handyman, LLC provides a large range of services from small jobs, repairs, tiling, carpentry, to renovation, porches, and more. 
+Rafiki Handyman, LLC provides a large range of services from small jobs, repairs, tiling, carpentry, to renovation, porches, and more.
 
 - A creative problem solver
 - Detail oriented
@@ -71,4 +71,6 @@ Rafiki Handyman, LLC provides a large range of services from small jobs, repairs
 - Insured
 - Over 10 years in business
 
-Serving Durham, NC and nearby areas. **[Call](tel:+19192254533)** or **[Email](mailto:rafikihandyman@gmail.com)**
+Serving Durham, NC and nearby areas.
+
+**[Call](tel:+19192254533)** or **[Email](mailto:rafikihandyman@gmail.com)**
